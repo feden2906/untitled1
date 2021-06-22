@@ -1,11 +1,12 @@
 
 import './App.css';
-import Coments from "./components/coments/Coments";
+import Comment from "./components/comment/Comment";
+
 
 function App() {
   return (
     <div>
-      <Coments/>
+        <Comment/>
     </div>
   );
 }
