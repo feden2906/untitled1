@@ -1,4 +1,5 @@
 import {useEffect, useState} from "react";
+import Comment from "../comment/Comment";
 
 export default function Coments () {
 
@@ -17,7 +18,7 @@ export default function Coments () {
     return(
         <div>
             {
-                usersList.map(value => <div>{value.id}-{value.name}</div>)
+                usersList.map(value => <Comment item={value}/>)
             }
         </div>
     )
