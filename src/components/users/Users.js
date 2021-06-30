@@ -1,6 +1,7 @@
 import User from "../user/User";
 import {getUsers, getUsersPost} from "../../service/api/API"
 import {useEffect, useState} from "react";
+import Post from "../post/Post";
 
 export default function Users (){
 
@@ -14,9 +15,8 @@ export default function Users (){
     })
     function getUserPosts(id) {
         getUsersPost(id).then(value =>{
-            // setPosts(value.data)
-            console.log(value.data)
-            console.log(id)
+            setPosts(value.data)
+
 
         })
     }
