@@ -1,6 +1,7 @@
 import {getPosts} from "../../service/api/API"
 import {useEffect, useState} from "react";
 import Post from "../post/Post";
+
 export default function Posts (){
 
     const [posts, setPosts] = useState([])
@@ -8,7 +9,6 @@ export default function Posts (){
     useEffect(()=>{
         getPosts().then(response =>{
             setPosts(response.data)
-            // console.log(posts)
         })
     })
 

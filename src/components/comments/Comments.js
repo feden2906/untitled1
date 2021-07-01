@@ -8,14 +8,13 @@ export default function Comments (){
    useEffect(()=>{
        getComments().then(response =>{
            setComments(response.data)
-           // console.log(comments)
        })
    })
+
     return(
         <div>
             {
                 comments.map(comment => <Comment comment={comment} key={comment.id}/>)
-
             }
         </div>
     )

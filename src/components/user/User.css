@@ -1,0 +1,15 @@
+.containet{
+    display: flex;
+    width: 300px;
+    justify-content: space-between;
+    padding-top: 5px;
+    margin-top: 10px;
+    border-bottom: 2px solid black;
+}
+.post_containet{
+    display: flex;
+    justify-content: space-between;
+    width: 700px;
+    padding-top: 5px;
+    border-bottom: 1px solid blue;
+}
